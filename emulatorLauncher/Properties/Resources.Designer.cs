@@ -19,7 +19,7 @@ namespace EmulatorLauncher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -112,7 +112,12 @@ namespace EmulatorLauncher.Properties {
         ///ntsc-hardware-fbx
         ///nes-classic-fbx-fs
         ///nescap
-        ///wav [rest of string was truncated]&quot;;.
+        ///wavebeam
+        ///custom
+        ///disabled
+        ///SGB - 1A
+        ///SGB - 1B
+        ///S [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string blacklisted_words {
             get {
@@ -227,26 +232,6 @@ namespace EmulatorLauncher.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] wheelmapping {
-            get {
-                object obj = ResourceManager.GetObject("wheelmapping", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] wheelsdlmapping {
-            get {
-                object obj = ResourceManager.GetObject("wheelsdlmapping", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Looking for updates....
         /// </summary>
         internal static string LookingForUpdates {
@@ -276,7 +261,7 @@ namespace EmulatorLauncher.Properties {
         ///cheatpath                 cheat
         ///crosshairpath             crosshair
         ///pluginspath               plugins
-        ///languag [rest of string was truncated]&quot;;.
+        ///languagepath              l [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string mame {
             get {
@@ -346,7 +331,9 @@ namespace EmulatorLauncher.Properties {
         ///
         ///[INPUT]
         ///ForceShortcutModifiers=1
-        ///InputProcessing=2 [rest of string was truncated]&quot;;.
+        ///InputProcessing=2
+        ///KeyEffects=0,0,0,0
+        ///Key [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ReShadeIni {
             get {
@@ -421,6 +408,26 @@ namespace EmulatorLauncher.Properties {
         internal static string Updating {
             get {
                 return ResourceManager.GetString("Updating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] wheelmapping {
+            get {
+                object obj = ResourceManager.GetObject("wheelmapping", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] wheelsdlmapping {
+            get {
+                object obj = ResourceManager.GetObject("wheelsdlmapping", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
